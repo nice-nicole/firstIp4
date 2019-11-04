@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
@@ -33,8 +34,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     @BindView(R.id.confPass) EditText confPass;
 
     @BindView(R.id.crAcc) Button crAcc;
-    @BindView(R.id.log)
-    TextView log;
+    @BindView(R.id.log) TextView log;
+    @BindView(R.id.txt2) TextView txt2;
 
     private FirebaseAuth authProtocol;
 
@@ -52,6 +53,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_sign_up);
 
         ButterKnife.bind(this);
+
+        Typeface caviarFont = Typeface.createFromAsset(getAssets(), "fonts/caviar_dreams/CaviarDreams.ttf");
+        txt2.setTypeface(caviarFont);
+        log.setTypeface(caviarFont);
         crAcc.setOnClickListener(this);
         log.setOnClickListener(this);
 

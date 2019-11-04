@@ -4,38 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@drawable/news5"
     tools:context="com.example.firstip3.ui.SignUpActivity">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="60dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        />
 
     <TextView
         android:id="@+id/txt2"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:text="Create an account"
+        android:textColor="#000000"
         android:textSize="35sp"
-        android:textColor="@color/colorTextColor"
-        android:layout_marginTop="40dp"
-        android:layout_centerHorizontal="true"
-        android:paddingRight="20dp"
-        android:paddingLeft="50dp"
-        />
+        android:layout_centerHorizontal="true"/>
 
     <EditText
         android:id="@+id/name"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:hint="username"
-        android:textColor="@color/colorTextColor"
+        android:textColor="#000000"
         android:layout_below="@id/txt2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>
@@ -43,22 +33,22 @@
 
     <EditText
         android:id="@+id/email2"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:hint="Email-adress"
-        android:textColor="@color/colorTextColor"
+        android:textColor="#000000"
         android:layout_below="@id/name"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>
 
     <EditText
         android:id="@+id/pass2"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:hint="enter password"
-        android:textColor="@color/colorTextColor"
+        android:textColor="#000000"
         android:layout_below="@id/email2"
         android:layout_centerHorizontal="true"
         android:paddingRight="20dp"
@@ -68,11 +58,11 @@
 
     <EditText
         android:id="@+id/confPass"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:hint="confirm password"
-        android:textColor="@color/colorTextColor"
+        android:textColor="#000000"
         android:layout_below="@id/pass2"
         android:layout_centerHorizontal="true"
         android:paddingRight="20dp"
@@ -87,20 +77,20 @@
         android:text="create account"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:textColor="@color/colorTextColor"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
         />
 
 
     <TextView
         android:id="@+id/log"
-        android:layout_width="135dp"
+        android:layout_width="255dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/crAcc"
         android:text="Already have an account?Login"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
-        android:textColor="@color/colorTextColor"
-        />
+        android:textColor="#000000"        />
 
 
 </RelativeLayout>

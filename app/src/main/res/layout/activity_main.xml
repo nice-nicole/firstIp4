@@ -5,7 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".ui.MainActivity"
-android:background="@drawable/news1">
+android:background="@drawable/news2">
 
 
 
@@ -13,7 +13,7 @@ android:background="@drawable/news1">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/appNameTextView"
-        android:text="News board.. \n Hope you enjoy..!"
+        android:text="Hello, \n Explore our news application!"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -26,24 +26,23 @@ android:background="@drawable/news1">
         android:layout_height="wrap_content"
         android:id="@+id/locationEditText"
         android:background="@color/colorTextIcons"
-        android:layout_above="@id/findNewsbutton"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="450dp"
         android:padding="5dp"
-        android:hint="Enter Zip Code"
+        android:hint="Enter a city of united states"
         android:layout_centerHorizontal="true"/>
 
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text="Look for some news"
+        android:text="continue"
         android:id="@+id/findNewsbutton"
         android:background="@color/colorAccent"
         android:textColor="@color/colorTextIcons"
         android:visibility="visible"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"/>
+        android:layout_below="@id/locationEditText"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
 
 
 

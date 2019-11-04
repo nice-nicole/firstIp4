@@ -4,14 +4,19 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Typeface;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.firstip3.Constants;
@@ -35,14 +40,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @BindView(R.id.appNameTextView)
     TextView mAppNameTextView;
 
+    Animation androidZoomInAnimation;
+    ImageView zoomInImg;
+    Button btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        Typeface caviarFont = Typeface.createFromAsset(getAssets(), "fonts/caviar_dreams/CaviarDreams.ttf");
+        mAppNameTextView.setTypeface(caviarFont);
+
         mFindNewsbutton.setOnClickListener(this);
 
+        btn = (Button) findViewById(R.id.findNewsbutton);
+        androidZoomInAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoomin);
+        btn.startAnimation(androidZoomInAnimation);
+
     }
+
+
+
+
     @Override
     public void onClick(View v) {
         if (v == mFindNewsbutton) {

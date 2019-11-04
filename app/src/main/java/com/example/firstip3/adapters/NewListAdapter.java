@@ -50,8 +50,8 @@ public class NewListAdapter extends RecyclerView.Adapter<NewListAdapter.NewViewH
     }
 
     public class NewViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
-//        @BindView(R.id.newImageView)
-//        ImageView mNewImageView;
+        @BindView(R.id.newImageView)
+        ImageView mNewImageView;
         @BindView(R.id.newNameTextView)
         TextView mNameTextView;
         @BindView(R.id.categoryTextView) TextView mCategoryTextView;
@@ -65,13 +65,10 @@ public class NewListAdapter extends RecyclerView.Adapter<NewListAdapter.NewViewH
             itemView.setOnClickListener(this);
         }
         public void bindBusiness(Business newss) {
-//            Picasso.get().load(newss.getImageUrl()).into(mNewImageView);
-
-//            Picasso.get().load(newss.getImageUrl()).into(mNewImageView);
             mNameTextView.setText(newss.getName());
             mCategoryTextView.setText(newss.getCategories().get(0).getTitle());
             mRatingTextView.setText("Rating: " + newss.getRating() + "/5");
-
+            Picasso.get().load(newss.getImageUrl()).into(mNewImageView);
         }
         @Override
         public void onClick(View v){
