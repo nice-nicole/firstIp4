@@ -23,10 +23,10 @@
 
 
     <Button
+        android:id="@+id/strt"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Click here"
-        android:id="@+id/strt"
         android:background="@color/colorAccent"
         android:textColor="@color/colorTextIcons"
         android:visibility="visible"

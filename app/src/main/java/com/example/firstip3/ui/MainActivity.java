@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        Typeface caviarFont = Typeface.createFromAsset(getAssets(), "fonts/caviar_dreams/CaviarDreams.ttf");
-        mAppNameTextView.setTypeface(caviarFont);
+//        Typeface caviarFont = Typeface.createFromAsset(getAssets(), "assets/fonts/caviar_dreams/CaviarDreams.ttf");
+//        mAppNameTextView.setTypeface(caviarFont);
 
         mFindNewsbutton.setOnClickListener(this);
 

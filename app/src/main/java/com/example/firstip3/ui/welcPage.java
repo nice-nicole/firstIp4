@@ -20,8 +20,8 @@ import butterknife.ButterKnife;
 
 public class welcPage extends AppCompatActivity implements View.OnClickListener{
 
-    public static final String TAG = MainActivity.class.getSimpleName();
-    @BindView(R.id.strt)Button strt;
+    public static final String TAG = welcPage.class.getSimpleName();
+    @BindView(R.id.strt)Button startBtn;
     @BindView(R.id.txtV)TextView txt;
 
     Animation SlideUpAnimation;
@@ -30,7 +30,7 @@ public class welcPage extends AppCompatActivity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_welc_page);
         ButterKnife.bind(this);
 
         Typeface caviarFont = Typeface.createFromAsset(getAssets(), "fonts/caviar_dreams/CaviarDreams.ttf");
@@ -40,7 +40,7 @@ public class welcPage extends AppCompatActivity implements View.OnClickListener{
         SlideUpAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slideup);
         txt.startAnimation(SlideUpAnimation);
 
-        strt.setOnClickListener(this);
+        startBtn.setOnClickListener(this);
 
         rot=AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotateanim);
 
@@ -51,7 +51,7 @@ public class welcPage extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        if (v == strt) {
+        if (v == startBtn) {
             Intent intent = new Intent(welcPage.this, LogInActivity.class);
             startActivity(intent);
         }

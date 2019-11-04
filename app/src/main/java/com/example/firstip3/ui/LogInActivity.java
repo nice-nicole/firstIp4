@@ -45,13 +45,14 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_log_in);
 
         ButterKnife.bind(this);
-
-        Typeface caviarFont = Typeface.createFromAsset(getAssets(), "fonts/caviar_dreams/CaviarDreams.ttf");
-        txt.setTypeface(caviarFont);
-        crAccount.setTypeface(caviarFont);
-
         crAccount.setOnClickListener(this);
         loginBtn.setOnClickListener(this);
+
+//        Typeface caviarFont = Typeface.createFromAsset(getAssets(), "fonts/caviar_dreams/CaviarDreams.ttf");
+//        txt.setTypeface(caviarFont);
+//        crAccount.setTypeface(caviarFont);
+
+
 
         authProtocol= FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
