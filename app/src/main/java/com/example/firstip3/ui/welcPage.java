@@ -32,6 +32,7 @@ public class welcPage extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welc_page);
         ButterKnife.bind(this);
+        startBtn.setOnClickListener(this);
 
         Typeface caviarFont = Typeface.createFromAsset(getAssets(), "fonts/caviar_dreams/CaviarDreams.ttf");
         txt.setTypeface(caviarFont);
@@ -40,12 +41,9 @@ public class welcPage extends AppCompatActivity implements View.OnClickListener{
         SlideUpAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slideup);
         txt.startAnimation(SlideUpAnimation);
 
-        startBtn.setOnClickListener(this);
-
         rot=AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotateanim);
 
     }
-
 
 
 

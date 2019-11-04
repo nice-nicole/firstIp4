@@ -21,17 +21,9 @@
         <activity android:name=".ui.SavedNewsListActivity" />
         <activity android:name=".ui.NewDetailActivity" />
         <activity android:name=".ui.NewsActivity" />
-        <activity android:name=".ui.LogInActivity">
-        </activity>
+        <activity android:name=".ui.LogInActivity"/>
         <activity android:name=".ui.SignUpActivity" />
         <activity android:name=".ui.MainActivity">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
         </activity>
     </application>
 
